@@ -1,4 +1,4 @@
-package com.boilerplate_spring_boot_kotlin.rest
+package com.boilerplate_spring_boot_kotlin.controller
 
 import com.boilerplate_spring_boot_kotlin.model.UserDTO
 import com.boilerplate_spring_boot_kotlin.service.UserService

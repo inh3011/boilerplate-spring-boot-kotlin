@@ -1,6 +1,6 @@
-package com.boilerplate_spring_boot_kotlin.repos
+package com.boilerplate_spring_boot_kotlin.repository
 
-import com.boilerplate_spring_boot_kotlin.domain.User
+import com.boilerplate_spring_boot_kotlin.entity.User
 import org.springframework.data.jpa.repository.JpaRepository
 
 

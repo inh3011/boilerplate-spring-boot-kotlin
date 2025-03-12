@@ -1,4 +1,4 @@
-package com.boilerplate_spring_boot_kotlin.domain
+package com.boilerplate_spring_boot_kotlin.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity

@@ -1,9 +1,9 @@
 package com.boilerplate_spring_boot_kotlin.service
 
-import com.boilerplate_spring_boot_kotlin.domain.User
+import com.boilerplate_spring_boot_kotlin.entity.User
 import com.boilerplate_spring_boot_kotlin.model.UserDTO
-import com.boilerplate_spring_boot_kotlin.repos.UserRepository
-import com.boilerplate_spring_boot_kotlin.util.NotFoundException
+import com.boilerplate_spring_boot_kotlin.repository.UserRepository
+import com.boilerplate_spring_boot_kotlin.exception.NotFoundException
 import org.springframework.data.domain.Sort
 import org.springframework.stereotype.Service
 

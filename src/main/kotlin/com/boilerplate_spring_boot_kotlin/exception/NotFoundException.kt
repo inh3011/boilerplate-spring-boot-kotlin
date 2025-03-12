@@ -1,4 +1,4 @@
-package com.boilerplate_spring_boot_kotlin.util
+package com.boilerplate_spring_boot_kotlin.exception
 
 import java.lang.RuntimeException
 import org.springframework.http.HttpStatus
