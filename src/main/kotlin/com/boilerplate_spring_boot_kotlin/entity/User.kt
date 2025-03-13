@@ -1,20 +1,14 @@
 package com.boilerplate_spring_boot_kotlin.entity
 
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.EntityListeners
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
-import jakarta.persistence.SequenceGenerator
-import jakarta.persistence.Table
+import com.boilerplate_spring_boot_kotlin.enumuration.Role
+import jakarta.persistence.*
 import java.time.OffsetDateTime
 import org.springframework.data.annotation.CreatedDate
 import org.springframework.data.annotation.LastModifiedDate
 import org.springframework.data.jpa.domain.support.AuditingEntityListener
 
 @Entity
-@Table(name = "Users")
+@Table(name = "users")
 @EntityListeners(AuditingEntityListener::class)
 class User {
 
@@ -47,6 +41,10 @@ class User {
     @Column(nullable = false)
     var password: String? = null
 
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    var role: Role? = null
+
     @CreatedDate
     @Column(
         nullable = false,
@@ -57,5 +55,6 @@ class User {
     @LastModifiedDate
     @Column(nullable = false)
     var lastUpdated: OffsetDateTime? = null
-
 }
+
+
