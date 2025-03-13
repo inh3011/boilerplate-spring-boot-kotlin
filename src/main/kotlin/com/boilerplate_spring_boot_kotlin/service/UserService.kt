@@ -7,7 +7,6 @@ import com.boilerplate_spring_boot_kotlin.exception.NotFoundException
 import org.springframework.data.domain.Sort
 import org.springframework.stereotype.Service
 
-
 @Service
 class UserService(
     private val userRepository: UserRepository
