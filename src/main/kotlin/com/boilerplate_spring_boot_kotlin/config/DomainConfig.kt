@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement
 
 
 @Configuration
-@EntityScan("com.boilerplate_spring_boot_kotlin.domain")
+@EntityScan("com.boilerplate_spring_boot_kotlin.entity")
 @EnableJpaRepositories("com.boilerplate_spring_boot_kotlin.repository")
 @EnableTransactionManagement
 @EnableJpaAuditing(dateTimeProviderRef = "auditingDateTimeProvider")
