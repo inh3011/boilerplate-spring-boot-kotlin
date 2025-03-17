@@ -33,6 +33,8 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
+    implementation("io.jsonwebtoken:jjwt:0.11.5")
+
     runtimeOnly("org.postgresql:postgresql")
 
     implementation("io.github.wimdeblauwe:error-handling-spring-boot-starter:4.5.0")
